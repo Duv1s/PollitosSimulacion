@@ -3,7 +3,6 @@ package logic.entity;
 import logic.methodsTest.UniformDistribution;
 
 /**
- *
  * @author Duvis Gómez && Martin Vivanco
  */
 public enum Dish {

@@ -12,7 +12,7 @@ public class DishStat {
     private int totalRank;
 
     public DishStat(Dish dish) {
-        this.dish=dish;
+        this.dish = dish;
         totalSells=0;
         rank=0;
         rankedSells=0;
@@ -73,6 +73,14 @@ public class DishStat {
     @Override
     public String toString() {
         return dish.name()+" {Ventas Totales: "+totalSells+", Ventas calificadas: "+rankedSells+", Calificación total: "+totalRank+", Calificación: "+rank+"}";
+    }
+
+    public Dish getDish() {
+        return dish;
+    }
+
+    public void setDish(Dish dish) {
+        this.dish = dish;
     }
     
 }
