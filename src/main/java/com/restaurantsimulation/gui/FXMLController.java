@@ -10,7 +10,7 @@ import javafx.scene.control.Spinner;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import logic.RestaurantSimulation;
+import logic.methodsTest.RestaurantSimulation;
 import logic.entity.Dish;
 import logic.entity.DishStat;
 

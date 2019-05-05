@@ -1,6 +1,6 @@
 package logic.entity;
 
-import logic.UniformDistribution;
+import logic.methodsTest.UniformDistribution;
 
 /**
  * @author Duvis Gómez && Martin Vivanco
