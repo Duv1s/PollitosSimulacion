@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  *  Simulacion correspondiente a X horas de trabajo, con X cantidad de comensales
- * @author Yuliamz
+ * @@author Duvis Gómez && Martin Vivanco
  */
 public class SimulatedDiner {
         DishStat pl1 = new DishStat(Dish.BANDEJA_PAISA);

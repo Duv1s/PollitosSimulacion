@@ -3,8 +3,8 @@ package logic.entity;
 import logic.UniformDistribution;
 
 /**
- * Platos
- * @author Yuliamz
+ *
+ * @author Duvis Gómez && Martin Vivanco
  */
 public enum Dish {
  BANDEJA_PAISA,CUCHUCO_DE_TRIGO,PAELLA_VALENCIANA,ARROZ_CON_POLLO;

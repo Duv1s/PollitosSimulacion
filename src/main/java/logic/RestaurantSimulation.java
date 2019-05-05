@@ -9,7 +9,7 @@ import logic.entity.SimulatedDiner;
 
 /**
  *
- * @author Yuliamz
+ * @author Duvis Gómez && Martin Vivanco
  */
 public class RestaurantSimulation {
     private final int maxDiner;
@@ -51,12 +51,7 @@ public class RestaurantSimulation {
         plato4 = new DishStat(Dish.ARROZ_CON_POLLO);
         
     }
-    
-    /**
-     * realiza una simulacion de N comensales
-     * @param diners cantidad de comensales a simular
-     * @return lista de comensales
-     */
+
     private List<Diner> simulateDiners(int diners){
         List<Diner> dsList = new ArrayList<>();
         for (int i = 0; i < diners; i++) {
@@ -64,9 +59,7 @@ public class RestaurantSimulation {
         }
         return dsList;
     }
-    /**
-     * Inicia la simulación
-     */
+
     public void startSimulation(){
         for (int i = 0; i < dinersPerSimulatedHours.size(); i++) {
             List<Diner> ds = simulateDiners(dinersPerSimulatedHours.get(i).intValue());
@@ -75,9 +68,7 @@ public class RestaurantSimulation {
         }
         calcFinalStats();
     }
-    /**
-     * Realiza el cálculo de las estadisticas finales de cada plato
-     */
+
     private void calcFinalStats(){
         
         for (int i = 0; i < simulatedDiners.size(); i++) {
@@ -106,18 +97,13 @@ public class RestaurantSimulation {
         plato3.setRank(plato3.getTotalRank()/(double)plato3.getRankedSells());
         plato4.setRank(plato4.getTotalRank()/(double)plato4.getRankedSells());
     }
-    /**
-     * muestra las estadisticas de los platos por consola
-     */
+
     public void printStats(){
         System.out.println(plato1.toString());
         System.out.println(plato2.toString());
         System.out.println(plato3.toString());
         System.out.println(plato4.toString());
     }
-    /**
-     * gets y sets
-     */
     public DishStat getPlato1() {
         return plato1;
     }
